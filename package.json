@@ -16,5 +16,10 @@
     "request": "^2.55.0",
     "virgilio": "^0.12.5",
     "virgilio-http": "^0.8.1"
-  }
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/ninjatux/http-status-checker/issues"
+  },
+  "homepage": "https://github.com/ninjatux/http-status-checker/issues"
 }
