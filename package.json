@@ -1,6 +1,6 @@
 {
   "name": "http-status-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HTTP status checker used in conjunction with AWS ELB to overcome 1 endpoint check limit",
   "main": "index.js",
   "bin": {
