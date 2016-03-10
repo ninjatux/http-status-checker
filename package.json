@@ -1,0 +1,20 @@
+{
+  "name": "http-status-checker",
+  "version": "1.0.0",
+  "description": "HTTP status checker used in conjunction with AWS ELB to overcome 1 endpoint check limit",
+  "main": "index.js",
+  "bin": {
+    "hsc": "bin/hsc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valerio Barrila",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "request": "^2.55.0",
+    "virgilio": "^0.12.5",
+    "virgilio-http": "^0.8.1"
+  }
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+var argv = require('minimist')(process.argv.slice(2))
+var hsc = require('../src')
+
+// OPTS or ENV
+// PORT --> port in which the server will run
+// ENDPOINTS -- comma concatenated strings of endpoints
+
+var PORT = argv.p || process.env.PORT
+if (isNaN(PORT)) {
+  throw new Error('port must be a number')
+}
+
+var ENDPOINTS = argv.e || process.env.ENDPOINTS
+if (!ENDPOINTS) {
+  throw new Error('no endpoints to check')
+}
+
+hsc({
+  port: PORT,
+  endpoints: ENDPOINTS.split(',')
+})
